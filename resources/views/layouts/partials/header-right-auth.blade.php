@@ -28,12 +28,12 @@
                   {{ __('Manage Account') }}
               </div>
 
-              <x-dropdown-link href="{{ route('profile.show') }}">
+              <x-dropdown-link wire:navigate href="{{ route('profile.show') }}">
                   {{ __('Profile') }}
               </x-dropdown-link>
 
               @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                  <x-dropdown-link href="{{ route('api-tokens.index') }}">
+                  <x-dropdown-link wire:navigate href="{{ route('api-tokens.index') }}">
                       {{ __('API Tokens') }}
                   </x-dropdown-link>
               @endif
