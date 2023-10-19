@@ -36,7 +36,7 @@ class PostComments extends Component
     #[Computed()]
     public function comments()
     {
-        return $this?->post?->comments()->latest()->paginate(5);
+        return $this?->post?->comments()->with('user')->latest()->paginate(5);
     }
 
     public function render()
