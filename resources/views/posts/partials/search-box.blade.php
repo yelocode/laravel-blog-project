@@ -4,7 +4,7 @@
     search : query
 })" id="search-box">
     <div>
-        <h3 class="mb-3 text-lg font-semibold text-gray-900">Search</h3>
+        <h3 class="mb-3 text-lg font-semibold text-gray-900">{{ __('blog.search') }}</h3>
         <div class="flex items-center px-3 py-2 mb-3 bg-gray-100 w-52 rounded-2xl">
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -15,10 +15,11 @@
             </span>
             <input x-model="query"
                 class="w-40 ml-1 text-xs text-gray-800 bg-transparent border-none outline-none focus:outline-none focus:border-none focus:ring-0 placeholder:text-gray-400"
-                type="text" placeholder="Search...">
+                type="text" placeholder="{{ __('blog.search_placeholder') }}">
         </div>
         <x-button x-on:click="$dispatch('search',{
             search : query
-        })"> Search </x-button>
+        })"> {{ __('blog.search') }}
+        </x-button>
     </div>
 </div>
