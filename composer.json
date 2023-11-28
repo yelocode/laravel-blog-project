@@ -16,7 +16,8 @@
         "laravel/jetstream": "^4.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^3.0"
+        "livewire/livewire": "^3.0",
+        "outhebox/blade-flags": "^1.2"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.9",
